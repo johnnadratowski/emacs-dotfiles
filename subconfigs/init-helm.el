@@ -11,15 +11,16 @@
 (after 'projectile
   (require-package 'helm-projectile))
 (global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-p") 'hem-my-buffers)
 
 (defun helm-my-buffers ()
-  (interactive)
+  (Interactive)
   (require 'helm-files)
   (let ((helm-ff-transformer-show-only-basename nil))
   (helm-other-buffer '(helm-c-source-buffers-list
                        helm-c-source-elscreen
                        helm-c-source-occur
-                       ;;                        helm-c-source-projectile-files-list
+                       helm-c-source-projectile-files-list
                        helm-c-source-ctags
                        helm-c-source-recentf
                        helm-c-source-locate)
