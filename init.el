@@ -1,5 +1,5 @@
-(setq user-full-name "Juanjo Alvarez Martinez")
-(setq user-mail-address "juanjo@juanjoalvarez.net")
+(setq user-full-name "John Nadratowski")
+(setq user-mail-address "jnadro52@gmail.com")
 
     ;; "after" macro definition
     (if (fboundp 'with-eval-after-load)
